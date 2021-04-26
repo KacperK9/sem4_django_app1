@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+</head>
+<body>
+
+    <h1>Template aplikacji</h1>
+    {% if cars_length == 0 %}
+    <p>No cars</p>
+    {% else %}
+        {% for car in cars %}
+        <p>{{ car }}</p>
+        {% endfor %}
+    {% endif %}
+
+</body>
+</html>
